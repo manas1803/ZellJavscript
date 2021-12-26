@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Carousel</title>
+
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <section class="carousel rowDisplay">
+    <div class="carousel__left carousel__slider"></div>
+        <div class="carousel__content-container">
+          <ul class="carousel__content rowDisplayInline">
+            <li class="carousel__slide is-selected">
+              <a href="#link to somewhere">
+                <img src="images/Waterfall1.jpg" alt="waterfall">
+              </a>
+            </li>
+            <li class="carousel__slide">
+              <a href="#link to somewhere">
+                <img src="images/Waterfall2.jpg" alt="waterfall">
+              </a>
+            </li>
+            <li class="carousel__slide">
+              <a href="#link to somewhere">
+                <img src="images/Waterfall3.jpg" alt="waterfall">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="carousel__right carousel__slider"></div>
+        <div class="carousel__dots">
+          <button class="carousel__dot is-button-selected"></button>
+          <button class="carousel__dot"></button>
+          <button class="carousel__dot"></button>
+        </div>
+  </section>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
