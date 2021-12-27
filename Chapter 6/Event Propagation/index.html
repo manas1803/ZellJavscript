@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        min-width: 300px;
+        min-height: 300px;
+        padding: 50px;
+    }
+    #grandparent{
+        background-color: aquamarine;
+    }
+    #parent{
+        background-color: antiquewhite;
+    }
+    #child{
+        background-color: aqua;
+    }
+    #grandparents{
+        background-color: rgb(145, 144, 226);
+    }
+    #parents{
+        background-color: aquamarine;
+    }
+    #childs{
+        background-color: antiquewhite;
+    }
+</style>
+<body>
+    <div class="container" style="display: flex;">
+        <div class="event__bubbling">
+            <div id="grandparent">
+                <div id="parent">
+                    <div id="child"></div>
+                </div>
+            </div>
+        </div>
+        <div class="event__capturing">
+            <div id="grandparents">
+                <div id="parents">
+                    <div id="childs"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

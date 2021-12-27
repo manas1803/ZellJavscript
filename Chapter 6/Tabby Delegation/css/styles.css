@@ -1,0 +1,73 @@
+:root {
+    --indigo-050: #e0e8f9;
+    --indigo-100: #bed0f7;
+}
+
+[data-theme="tamagotchi"] {
+    --border-color: hsl(352, 100%, 40%);
+    --text-color: hsl(352, 97%, 23%);
+  }
+  
+  [data-theme="digimon"] {
+    --border-color: hsl(215, 46%, 42%);
+    --text-color: hsl(215, 63%, 23%);
+  }
+  
+  [data-theme="pokemon"] {
+    --border-color: hsl(46, 100%, 52%);
+    --text-color: hsl(43, 26%, 26%);
+  }
+
+.rowDisplay{
+    display: flex;
+}
+.tabs-header-heading {
+    width: 33.33%;
+    border: 0.3em solid var(--border-color);
+    color: var(--text-color);
+    background-color: var(--indigo-100);
+    filter: grayscale(75%) brightness(0.9);
+    color: var(--text-color);
+}
+.tabs-header-heading.is-selected{
+    filter: none;
+    background-color: white;
+}
+.tabby{
+    width: 55%;
+    padding: 3%;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+
+p{
+    line-height: 1.6;
+    font-family: Noto Sans;
+}
+h2{
+    font-family: Noto Sans;
+    font-size: 2.5rem;
+    margin-bottom: 4%;
+}
+.image-container {
+    width: 50%;
+}
+.text-content-container {
+    width: 50%;
+    padding: 6%;
+}
+.tabs-content-container {
+    width: 100%;
+    flex-direction: row-reverse;
+    border: 0.3em solid var(--border-color);
+    display: none;
+}
+.tabs-content-container.is-selected{
+    display: flex;
+}
+.tabs-header-heading {
+    background-color: white;
+    font-family: 'Noto Sans';
+    font-size: 1.5rem;
+    font-weight: 700;
+}
