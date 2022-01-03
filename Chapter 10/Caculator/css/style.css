@@ -1,0 +1,27 @@
+body{
+    justify-content: center;
+}
+button{
+    width: 5.7rem;
+    font-size: 1rem;
+    background-color: #EDF0F3;
+    border-color: #CBD2D9;
+}
+.rowDisplay{
+    display: flex;
+}
+.calculator {
+    padding: 8rem;
+    background-color: #85DBDA;
+    margin: auto 0;
+    width: 49.5%;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.calculator__display--container {
+    background: #1F2933;
+    padding: 5%;
+    color: #fff;
+    text-align: right;
+}
