@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+
+        <div class="checkbox">
+            <input type="checkbox" name="apples" id="apples" checked>
+            <label for="apples">Apples</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="oranges" id="oranges" checked>
+            <label for="oranges">Oranges</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="grapes" id="grapes" checked>
+            <label for="grapes">Grapes</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="mangoes" id="mangoes">
+            <label for="mangoes">Mangoes</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="guava" id="guava">
+            <label for="guava">Guava</label>
+        </div>
+
+        <div class="radio">
+            <input type="radio" name="fav-hero" id="batman" value="batman">
+            <label for="batman">Batman</label>
+        </div>
+        <div class="radio">
+            <input type="radio" name="fav-hero" id="superman" value="superman">
+            <label for="superman">Superman</label>
+        </div>
+        <div class="radio">
+            <input type="radio" name="fav-hero" id="flash" value="flash">
+            <label for="flash">Flash</label>
+        </div>
+        <div class="radio">
+            <input type="radio" name="fav-hero" id="wonderwoman" value="wonderwoman">
+            <label for="wonderwoman">Wonder-Woman</label>
+        </div>
+        <div class="radio">
+            <input type="radio" name="fav-hero" id="greenlantern" value="greenlantern">
+            <label for="greenlantern">Green-Lantern</label>
+        </div>
+        <label for="fruits">Note on fruits</label>
+        <textarea name="fruits" id="fruits" cols="30" rows="10">Hello I am here to talk about fruits </textarea>
+    </form>
+    <script src="js/main.js"></script>
+</body>
+</html>
