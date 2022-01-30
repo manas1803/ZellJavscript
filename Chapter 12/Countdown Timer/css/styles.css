@@ -1,0 +1,50 @@
+:root{
+  --background-dark:#1F2933;
+  --background-light:#5D7A98;
+  --textcolor-foreground:#AABBDF;
+  --box-shadow:#8DA2B9;
+}
+html{
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-light);
+  color: var(--textcolor-foreground);
+  font-weight: 300;
+}
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+}
+
+.row{
+  display: flex;
+}
+main{
+  justify-content: center;
+  padding: 13%;
+}
+.countdown{
+  padding: 12%;
+  background-color: var(--background-dark);
+  flex-direction: column;
+  border-radius: 1rem;
+  width: 100%;
+  box-shadow: 0.675rem 0.675rem 1.5rem 0.675rem var(--box-shadow);
+}
+.countdown__target{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+.timer__box{
+  width: 100%;
+  font-size: 2.5rem;
+  padding: 1%;
+  text-align: center;
+}
+.timer__box::after{
+  font-size: 0.75rem;
+  content: attr(data-unit);
+  font-variant: small-caps;
+  letter-spacing: 0.225em;
+}
